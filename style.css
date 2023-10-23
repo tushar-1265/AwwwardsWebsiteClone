@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'General Sans'; /* The name you want to use for the font */
+    src: url('./GeneralSans-Regular.otf') format('otf'); /* Path to your font file and its format */
+}
+
 *{
     margin: 0;
     padding: 0;
