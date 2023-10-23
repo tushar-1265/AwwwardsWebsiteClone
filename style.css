@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"General Sans";
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#minicircle{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: 9999;
+    border-radius: 50%;
+    background-color: white;
+    transition: all linear 0.1s;
+}
+#main{
+    width: 100%;
+    background-color: black;
+    scroll-behavior: smooth;
+
+}
+
+.bounding{
+    /* background-color: red; */
+    overflow: hidden;
+    width: fit-content;
+}
+
+ .boundingelem{
+    transform: translateY(100%);
+    
+}
+
+
+#hero{
+    
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+#nav{
+    width: 100%;
+    padding: 2vw 3vw;
+    color:#fff;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.15vw;
+
+}
+
+#nav a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#nav #plus{
+    font-size: 1vw;
+    font-weight: lighter;
+}
+
+#heading h1{
+    /* font-family: "General Sans Medium"; */
+    font-size: 10vw;
+    line-height:.9;
+    opacity: .65;
+}
+
+#heading{
+    margin-top: 7vw;
+    margin-left: 3vw;
+}
+
+#heading h4{
+    font-size: 16px;
+}
+#designer{
+    margin-left:11vw ;
+}
+
+.blocktext{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+}
+
+.blocktext h4{
+    text-align: right !important;
+    line-height: 3;
+
+    
+}
+
+#rightheadings{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 7vw;
+    margin-right: 3vw;
+}
+
+#rightheadings h4{
+    text-align: right;
+    line-height:2;
+    font-size: 16px;
+}
+
+#herofooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 3vw;
+    position: absolute;
+    width: 100%;
+    bottom:1%;
+}
+
+#herofooter a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#protopie{
+    margin-right:15vw;
+}
+
+#iconset{
+    display: flex;
+    gap: 5px;
+}
+
+#circlearrow{
+    background-color:white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: black;
+    font-size:16px;
+    text-align: center;
+    opacity: .65;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#second{
+    background-color: black;
+    color: white;
+    height: 130vh;
+    padding-right:10vw;
+    padding-left: 3vw;
+    padding-top: 14vw;
+    width: 100%;
+
+}
+
+.elem{
+    border-top: 1px solid #888;
+    padding: 3vw 0px;
+    border-bottom: 1px solid #888;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.elem h1{
+    font-size: 7vw;
+    opacity: .65;
+}
+
+.elem h5{
+    font-size: 1.1vw;
+    font-weight: 400;
+    /* opacity: 0.65; */
+}
+
+.elem img {
+    opacity: 0;
+    pointer-events: none;
+    height: 140%;
+    z-index: 999;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+#about{
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 10vw 10vw;
+    padding-left: 40vw;
+    gap: 60px;
+
+
+
+}
+
+#about img{
+    width: 220px;
+    padding-top: 0px;
+}
+
+#textabout
+{
+    width: 80%;
+    padding-top:5vw;
+}
+
+#textabout p{
+    font-size: 1.2vw;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+#textabout h5{
+    opacity: 0.65;
+    font-weight:400;
+    font-size: 1vw;
+}
+
+#textabout a{
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+    border: 1px solid white;
+    padding: 6px 20px;
+}
+
+#subscribe{
+    padding: 1vw 3vw;
+    color: white;
+    background-color: black;
+}
+
+#subscribe h5{
+    opacity: 0.65;
+    font-weight: 400;
+}
+
+#subscribe h3{
+    font-size: 1vw;
+    padding-top: .7vw;
+    padding-bottom: 10vw;
+}
+
+#footer{
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 3vw ;
+    
+}
+
+#footerleft{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    font-size: 0.9vw;
+    
+}
+
+#footer a{
+    text-decoration: none;
+    color: white;
+    font-size: .9vw;
+    font-weight: 500;
+    
+}
+
+#footerright{
+    display: flex;
+    gap: 50px;
+
+}
